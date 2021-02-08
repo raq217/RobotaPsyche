@@ -1,10 +1,10 @@
-Code:
-
 // Moving car 
 //Rashid Al Qubaisi
 
 PVector position, velocity;
 float angle, steerAngle;
+PImage bg;
+int y;
 
 boolean[] keys = new boolean[256];
 //control statement for true/false on arrow keys
@@ -20,7 +20,7 @@ void setup() {
 
 void draw() {
   
-  background(250);
+  
   PVector force = new PVector();  
   PVector vector1 = new PVector(sin(angle), cos(angle));
   PVector vector2 = new PVector(vector1.y, - vector1.x);
