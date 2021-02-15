@@ -13,7 +13,7 @@ class FlowField {
       float yoff = 0;
       for(int j = 0; j < h/detail; j++) {
         float angle = map(noise(xoff, yoff), 0,1, 0,2*PI);
-        //the reason for cos and sin gives it move ambiguity 
+        //the reason for cos and sin gives it more ambiguity 
         field[i][j] = new PVector(cos(angle), sin(angle));
         yoff += 0.1;
       }
