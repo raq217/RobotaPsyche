@@ -1,4 +1,4 @@
-lass Vehicle {
+class Vehicle {
 
   PVector location;
   PVector velocity;
